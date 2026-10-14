@@ -1,0 +1,29 @@
+[parameter:UserName]
+Type="Table"
+Table="users.dat"
+ColumnName="UserName"
+Delimiter=","
+SelectNextRow="Unique"
+GenerateNewVal="EachIteration"
+OutOfRangePolicy="ContinueCyclic"
+TableLocation="Local"
+
+[parameter:Password]
+Type="Table"
+Table="users.dat"
+ColumnName="Password"
+Delimiter=","
+SelectNextRow="Same line as UserName"
+GenerateNewVal="EachIteration"
+OutOfRangePolicy="ContinueCyclic"
+TableLocation="Local"
+
+[parameter:SearchTerm]
+Type="Table"
+Table="search_terms.dat"
+ColumnName="Col 1"
+Delimiter=","
+SelectNextRow="Random"
+GenerateNewVal="EachIteration"
+OutOfRangePolicy="ContinueCyclic"
+TableLocation="Local"

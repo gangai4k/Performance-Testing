@@ -1,0 +1,8 @@
+[RunLogicRunRoot]
+MercIniTreeFather=""
+MercIniTreeSectionName="RunLogicRunRoot"
+RunLogicNumOfIterations="1"
+RunLogicActionOrder="Action"
+
+[RunLogicActionOrder]
+Name="Action"
